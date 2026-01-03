@@ -1,0 +1,100 @@
+/* PrivacyPolicy.css */
+.privacy-container {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  .privacy-content {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.1);
+    padding: 2rem;
+  }
+  
+  h1 {
+    color: #e91e63;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    color: #d81b60;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    border-bottom: 2px solid #f8bbd0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .last-updated {
+    color: #757575;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    color: #424242;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  li {
+    color: #424242;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  strong {
+    color: #c2185b;
+  }
+  
+  .data-commitment {
+    background-color: #fce4ec;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #e91e63;
+  }
+  
+  .contact-info {
+    background-color: #f8bbd0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .contact-info p {
+    margin-bottom: 0.5rem;
+    color: #333333;
+  }
+  
+  @media (max-width: 768px) {
+    .privacy-content {
+      padding: 1.5rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,2 @@
+venv\Scripts\activate 
+python .\ml\treatment_plan.py

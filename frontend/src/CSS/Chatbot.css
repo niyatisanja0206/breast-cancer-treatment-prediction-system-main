@@ -1,0 +1,243 @@
+.chatbot-container {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    z-index: 10000;
+}
+
+.chatbot-launcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e83e8c;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(232, 62, 140, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10001;
+}
+
+.chatbot-launcher:hover {
+    transform: scale(1.1);
+    background-color: #d63384;
+}
+
+.chatbot-launcher svg {
+    width: 28px;
+    height: 28px;
+}
+
+.chatbot-window {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    width: 380px;
+    height: 550px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: slideUp 0.3s ease-out;
+    z-index: 10000;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-header {
+    background: linear-gradient(135deg, #e83e8c, #f37bb5);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.close-btn:hover {
+    opacity: 1;
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    max-width: 85%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+/* Markdown Styles */
+.message p {
+    margin: 0 0 8px 0;
+}
+
+.message p:last-child {
+    margin: 0;
+}
+
+.message ul,
+.message ol {
+    margin: 5px 0 10px 20px;
+    padding: 0;
+}
+
+.message li {
+    margin-bottom: 4px;
+}
+
+.message strong {
+    font-weight: 600;
+}
+
+.message.user {
+    background-color: #e83e8c;
+    color: white !important;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+.message.user * {
+    color: white !important;
+}
+
+.message.user a {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.message.assistant {
+    background-color: white;
+    color: black !important;
+    /* Force black text for AI response */
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+}
+
+.message.assistant * {
+    color: black !important;
+    /* Force black text for all children */
+}
+
+/* Except links if we want them distinct, but user said 'all fonts black only'. 
+   Keeping links slightly distinct might be necessary for usability, but complying with strict 'black only' request. 
+   If strictly black, they won't look like links. 
+   I'll make them bold black or underlined to show they are different but keep color black as requested. */
+.message.assistant a {
+    color: black !important;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.typing-indicator {
+    padding: 10px;
+    background: white;
+    align-self: flex-start;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #888;
+    border: 1px solid #eee;
+}
+
+.chatbot-input {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 13px;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input input:focus {
+    border-color: #e83e8c;
+}
+
+.send-btn {
+    background-color: #e83e8c;
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.send-btn:hover {
+    background-color: #d63384;
+}
+
+.send-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #d4cfcf;
+    border-radius: 3px;
+}

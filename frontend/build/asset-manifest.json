@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dbadd33f.css",
+    "main.js": "/static/js/main.d3740762.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "static/media/bcs-landing-ic3.png": "/static/media/bcs-landing-ic3.09bcfc9a644caf106129.png",
+    "static/media/person 3.jpg": "/static/media/person 3.2fc8c189992f6fdad7d8.jpg",
+    "static/media/bcs-landing.jpg": "/static/media/bcs-landing.18410848fe853c76931e.jpg",
+    "static/media/bcs-landing-ic1.png": "/static/media/bcs-landing-ic1.ddd61f396112e21d91ee.png",
+    "static/media/bcs-img1.png": "/static/media/bcs-img1.740a919b89951b21feaa.png",
+    "static/media/person 4.jpg": "/static/media/person 4.55fedf5e934dffc26840.jpg",
+    "static/media/bcs-img1.jpg": "/static/media/bcs-img1.6b235052d46f0ac67d89.jpg",
+    "static/media/bcs-img3.jpg": "/static/media/bcs-img3.0fb0d5010a2345ee7b4e.jpg",
+    "static/media/bcs-landing-ic2.png": "/static/media/bcs-landing-ic2.a3d950606eda8593d2b6.png",
+    "static/media/person 2.jpg": "/static/media/person 2.700ec7fa62cb8377ec76.jpg",
+    "static/media/person1.jpg": "/static/media/person1.a2f29b9cdc0baedb0108.jpg",
+    "index.html": "/index.html",
+    "main.dbadd33f.css.map": "/static/css/main.dbadd33f.css.map",
+    "main.d3740762.js.map": "/static/js/main.d3740762.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbadd33f.css",
+    "static/js/main.d3740762.js"
+  ]
+}

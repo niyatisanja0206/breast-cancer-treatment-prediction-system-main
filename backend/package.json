@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "modules": "^0.4.0",
+    "mongoose": "^8.13.0",
+    "node": "^20.19.0",
+    "python-shell": "^5.0.0"
+  }
+}
