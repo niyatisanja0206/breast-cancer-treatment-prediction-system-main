@@ -25,7 +25,7 @@ export default function Login() {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', formData, {
+      const response = await axios.post('https://breast-cancer-treatment-prediction.onrender.com/api/auth/login', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
