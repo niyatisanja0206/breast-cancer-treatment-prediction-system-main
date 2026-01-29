@@ -11,11 +11,11 @@ connectDB(); // MongoDB
 app.use(express.json());
 
 app.use(cors({
-<<<<<<< HEAD
-  origin: 'https://breast-cancer-treatment-prediction.onrender.com',
-=======
-  origin: 'https://breast-cancer-treatment-prediction-psi.vercel.app/',
->>>>>>> a4fa3379f949bb207af2191c6f06d5abc3acefd6
+  origin: [
+    'https://breast-cancer-treatment-prediction-psi.vercel.app',
+    'http://localhost:3000',
+    'http://localhost:5173'
+  ],
   credentials: true
 }));
 
